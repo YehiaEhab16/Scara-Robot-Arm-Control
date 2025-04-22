@@ -2,6 +2,8 @@
 
 A **Python-based GUI** for precise control of SCARA robots, featuring **forward/inverse kinematics solvers** and real-time motion planning. 
 
+![image](https://github.com/user-attachments/assets/a4eeed80-6687-45fb-b6a1-c1b76f72a76e)
+
 ## Key Features ✨
 - **Dual Kinematics Modes**:
   - ✅ **Forward Kinematics**: Joint-to-Cartesian conversion  
