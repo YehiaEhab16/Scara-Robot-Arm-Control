@@ -9,7 +9,7 @@
 
 from PySide6.QtWidgets import QFrame, QHBoxLayout, QLabel, QLineEdit, QTableWidget, QTableWidgetItem, QAbstractItemView, QPushButton, QRadioButton, QSizePolicy, QSlider, QVBoxLayout
 from PySide6.QtCore import QCoreApplication, QMetaObject, QSize, Qt
-from PySide6.QtGui import QFont,QIcon, QPixmap
+from PySide6.QtGui import QFont, QIcon
 import resources
 
 class ScaraUi(object):
@@ -439,19 +439,6 @@ class ScaraUi(object):
 
         self.horizontalLayout_6.addWidget(self.communicationFrame, 0, Qt.AlignmentFlag.AlignLeft)
 
-        self.logoLabel = QLabel(self.topFrame)
-        self.logoLabel.setObjectName(u"logoLabel")
-        self.logoLabel.setMaximumSize(QSize(170, 30))
-        font3 = QFont()
-        font3.setPointSize(20)
-        self.logoLabel.setFont(font3)
-        self.logoLabel.setStyleSheet(u"background-color: transparent;\n"
-"color: rgb(0, 85, 255);")
-        self.logoLabel.setPixmap(QPixmap(u":/Labels/logo.png"))
-        self.logoLabel.setScaledContents(True)
-
-        self.horizontalLayout_6.addWidget(self.logoLabel)
-
         self.rndLabel = QLabel(self.topFrame)
         self.rndLabel.setObjectName(u"rndLabel")
         self.rndLabel.setMinimumSize(QSize(0, 40))
@@ -498,10 +485,10 @@ class ScaraUi(object):
         sizePolicy3.setVerticalStretch(0)
         sizePolicy3.setHeightForWidth(self.forwardLabel.sizePolicy().hasHeightForWidth())
         self.forwardLabel.setSizePolicy(sizePolicy3)
-        font4 = QFont()
-        font4.setFamilies([u"Segoe UI"])
-        font4.setPointSize(14)
-        self.forwardLabel.setFont(font4)
+        font3 = QFont()
+        font3.setFamilies([u"Segoe UI"])
+        font3.setPointSize(14)
+        self.forwardLabel.setFont(font3)
         self.forwardLabel.setStyleSheet(u"background-color: transparent;\n"
 "color: rgb(255, 120, 20);")
 
@@ -1059,7 +1046,7 @@ class ScaraUi(object):
         sizePolicy4.setVerticalStretch(0)
         sizePolicy4.setHeightForWidth(self.inverseLabel.sizePolicy().hasHeightForWidth())
         self.inverseLabel.setSizePolicy(sizePolicy4)
-        self.inverseLabel.setFont(font4)
+        self.inverseLabel.setFont(font3)
         self.inverseLabel.setStyleSheet(u"background-color: transparent;\n"
 "color: rgb(255, 120, 20);")
 
@@ -1238,40 +1225,40 @@ class ScaraUi(object):
         self.positionsTable = QTableWidget(self.tableFrame)
         if (self.positionsTable.columnCount() < 7):
             self.positionsTable.setColumnCount(7)
+        font4 = QFont()
+        font4.setPointSize(12)
+        font4.setBold(True)
+        __qtablewidgetitem = QTableWidgetItem()
+        __qtablewidgetitem.setFont(font4);
+        self.positionsTable.setHorizontalHeaderItem(0, __qtablewidgetitem)
         font5 = QFont()
+        font5.setFamilies([u"Segoe UI"])
         font5.setPointSize(12)
         font5.setBold(True)
-        __qtablewidgetitem = QTableWidgetItem()
-        __qtablewidgetitem.setFont(font5);
-        self.positionsTable.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        __qtablewidgetitem1.setFont(font5);
+        self.positionsTable.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        __qtablewidgetitem2 = QTableWidgetItem()
+        __qtablewidgetitem2.setFont(font5);
+        self.positionsTable.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        __qtablewidgetitem3 = QTableWidgetItem()
+        __qtablewidgetitem3.setFont(font4);
+        self.positionsTable.setHorizontalHeaderItem(3, __qtablewidgetitem3)
+        __qtablewidgetitem4 = QTableWidgetItem()
+        __qtablewidgetitem4.setFont(font4);
+        self.positionsTable.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        __qtablewidgetitem5 = QTableWidgetItem()
+        __qtablewidgetitem5.setFont(font4);
+        self.positionsTable.setHorizontalHeaderItem(5, __qtablewidgetitem5)
+        __qtablewidgetitem6 = QTableWidgetItem()
+        __qtablewidgetitem6.setFont(font4);
+        self.positionsTable.setHorizontalHeaderItem(6, __qtablewidgetitem6)
+        self.positionsTable.setObjectName(u"positionsTable")
         font6 = QFont()
         font6.setFamilies([u"Segoe UI"])
         font6.setPointSize(12)
-        font6.setBold(True)
-        __qtablewidgetitem1 = QTableWidgetItem()
-        __qtablewidgetitem1.setFont(font6);
-        self.positionsTable.setHorizontalHeaderItem(1, __qtablewidgetitem1)
-        __qtablewidgetitem2 = QTableWidgetItem()
-        __qtablewidgetitem2.setFont(font6);
-        self.positionsTable.setHorizontalHeaderItem(2, __qtablewidgetitem2)
-        __qtablewidgetitem3 = QTableWidgetItem()
-        __qtablewidgetitem3.setFont(font5);
-        self.positionsTable.setHorizontalHeaderItem(3, __qtablewidgetitem3)
-        __qtablewidgetitem4 = QTableWidgetItem()
-        __qtablewidgetitem4.setFont(font5);
-        self.positionsTable.setHorizontalHeaderItem(4, __qtablewidgetitem4)
-        __qtablewidgetitem5 = QTableWidgetItem()
-        __qtablewidgetitem5.setFont(font5);
-        self.positionsTable.setHorizontalHeaderItem(5, __qtablewidgetitem5)
-        __qtablewidgetitem6 = QTableWidgetItem()
-        __qtablewidgetitem6.setFont(font5);
-        self.positionsTable.setHorizontalHeaderItem(6, __qtablewidgetitem6)
-        self.positionsTable.setObjectName(u"positionsTable")
-        font7 = QFont()
-        font7.setFamilies([u"Segoe UI"])
-        font7.setPointSize(12)
-        font7.setBold(False)
-        self.positionsTable.setFont(font7)
+        font6.setBold(False)
+        self.positionsTable.setFont(font6)
         self.positionsTable.setToolTipDuration(2000)
         self.positionsTable.setStyleSheet(u"QTableWidget {\n"
 "    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 50), stop:1 rgba(255, 255, 255, 50));\n"
@@ -1330,7 +1317,6 @@ class ScaraUi(object):
         self.comButton.setToolTip(QCoreApplication.translate("Scara", u"Toggle Connection", None))
 #endif // QT_CONFIG(tooltip)
         self.comButton.setText("")
-        self.logoLabel.setText("")
         self.rndLabel.setText("")
         self.forwardLabel.setText(QCoreApplication.translate("Scara", u"Forward Kinematics", None))
         self.firstJointRadio.setText(QCoreApplication.translate("Scara", u"First Joint", None))

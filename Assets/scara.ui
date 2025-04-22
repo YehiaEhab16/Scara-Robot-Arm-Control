@@ -547,34 +547,6 @@ QPushButton:pressed {
         </layout>
        </widget>
       </item>
-      <item>
-       <widget class="QLabel" name="logoLabel">
-        <property name="maximumSize">
-         <size>
-          <width>170</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>20</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: transparent;
-color: rgb(0, 85, 255);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="resources.qrc">:/Labels/logo.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
       <item alignment="Qt::AlignmentFlag::AlignRight">
        <widget class="QLabel" name="rndLabel">
         <property name="minimumSize">

@@ -1,6 +1,5 @@
 <RCC>
   <qresource prefix="Labels">
-    <file>logo.png</file>
     <file>green.png</file>
     <file>light.png</file>
     <file>orange.png</file>
